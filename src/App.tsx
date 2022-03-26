@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App = (props: {onButtonClick?: () => void}) => {
+  const [value, setValue] = useState(0);
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +19,8 @@ function App() {
         >
           Learn React
         </a>
+        <button id={'button-id'} onClick={() => setValue(3)}>buttonText</button>
+        <div id={'value-id'}>{value}</div>
       </header>
     </div>
   );
