@@ -21,6 +21,7 @@ const Card = (props: Props) => {
       <h2 id='card-header-id' className={headerColor === 'green' ? styles.green : styles.pink}>{header}</h2>
       {infoText && <p className={styles.infoText}>{infoText}</p>}
       <button
+        id='card-button-id'
         className={styles.button}
         type='button'
         onClick={() => headerColor === 'green' ? setHeaderColor('pink') : setHeaderColor('green')}
