@@ -1,0 +1,24 @@
+.footer {
+    display: inline;
+    text-align: center;
+    margin: 20px 0;
+    background-color: #181a14;
+    color: #e29ab6;
+}
+
+.footerName {
+    max-width: 1024px;
+    text-align: center;
+    margin: 0 auto;
+    color: #e29ab6;
+    display: block;
+    padding: 16px 0;
+}
+
+.footerName:visited {
+    color: #e29ab6;
+}
+
+a:visited {
+    color: #e29ab6;
+}

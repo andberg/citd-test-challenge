@@ -1,0 +1,15 @@
+
+.wrapper {
+    width: 1024px;
+    height: 256px;
+    background-color: #cccccc;
+    margin: 0 auto 36px;
+    border-radius: 4px;
+    padding-top: 40px;
+    color:  #181a14;
+}
+
+
+.text {
+    margin-top: 40px;
+}

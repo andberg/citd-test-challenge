@@ -5,7 +5,7 @@ import { render, screen } from '@testing-library/react';
 // import sinon from 'sinon';
 
 describe('renders learn react link', () => {
-  it('renders learn react link', () => {
+  it('canary', () => {
     expect(true).toBe(true)
   });
 });

@@ -1,27 +1,22 @@
-import React, { useState } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Footer from './Components/Footer/Footer';
+import Header from './Components/Header/Header';
+import Card from './Components/Card/Card';
+import TestBox from './Components/TestBox/TestBox';
+import TodoList from './Components/TodoList/TodoList';
 
-const App = (props: {onButtonClick?: () => void}) => {
-  const [value, setValue] = useState(0);
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <button id={'button-id'} onClick={() => setValue(3)}>buttonText</button>
-        <div id={'value-id'}>{value}</div>
-      </header>
+      <Header/>
+      <div className="body">
+        <Card />
+        <TestBox />
+        <TodoList />
+      </div>
+      <hr/>
+      <Footer/>
     </div>
   );
 }
